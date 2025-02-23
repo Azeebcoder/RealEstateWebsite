@@ -110,7 +110,7 @@ const PropertyForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/property/add",
+        "https://realestatewebsite-eix3.onrender.com/api/property/add",
         propertyData,
         {
           headers: {

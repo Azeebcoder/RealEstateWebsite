@@ -12,7 +12,7 @@ const PropertyDetail = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/property/get/${id}`
+          `https://realestatewebsite-eix3.onrender.com/api/property/get/${id}`
         );
         setData(response.data[0]);
       } catch (error) {
@@ -31,7 +31,7 @@ const PropertyDetail = () => {
     if (!confirmDelete) return;
     
     try {
-      await axios.delete(`http://localhost:3000/api/property/delete/${id}`);
+      await axios.delete(`https://realestatewebsite-eix3.onrender.com/api/property/delete/${id}`);
       alert("Property Deleted Successfully");
       window.location.href = "/"; // Redirect after deletion
     } catch (error) {

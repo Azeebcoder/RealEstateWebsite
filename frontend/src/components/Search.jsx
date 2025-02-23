@@ -35,7 +35,7 @@ const Search = () => {
     try {
       const features = selectedFeatures.join(",");
       const response = await axios.get(
-        "http://localhost:3000/api/property/get",
+        "https://realestatewebsite-eix3.onrender.com/api/property/get",
         {
           params: {
             search,
